@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: poppins;
+        }
+        .user, .pass, .login{
+            border-radius: 4px;
+            border-width: 1px;
+            border-color: grey;
+            border-style: solid;
+            padding: 3px;
+            margin: 3px;
+        }
+        .a{
+            text-decoration: none;
+            color: black;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="font-family: poppins;">Login</h1>
+    <form action="/login" method="post">
+        <input class="user" type="text" name="username" placeholder="Username" required>
+        <input class="pass" type="password" name="password" placeholder="Password" required>
+        <button class="login" type="submit">Login</button>
+    </form>
+    <a href="/" class="a">Back to Home</a>
+</body>
+</html>
